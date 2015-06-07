@@ -1,0 +1,50 @@
+/*POPULAR SECTION*/
+.popular{
+	background: $bgGrey;
+	padding: 5% 0;
+	p{
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+}
+
+.popular .stylebar{
+	margin: 0;
+	margin-bottom: 10%;
+	.rect{
+		width:82px;
+		left:0;
+	}
+	.line{
+		left: 14px;
+	}
+}
+
+.popular .wrapper{
+	text-align: inherit;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.popular ul{
+	max-height: 473px;
+	margin-right: 20px;
+	background: white;
+}
+
+.new,
+.featured,
+.top{
+	flex: 1 0 33.3%;
+}
+
+.popular li{
+	display: flex;
+	padding: 20px;
+	img{
+		margin-right: 10%;
+		max-width: 68px;
+		max-height: 117px;
+	}
+}

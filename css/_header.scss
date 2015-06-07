@@ -1,0 +1,68 @@
+/*HEADER SECTION*/
+header{
+	color: white;
+	background: black;
+}
+
+header span{
+	color: $brandColor;
+}
+
+header input{
+	padding-left: 20px;
+	margin-top: 40px;
+}
+
+header .wrapper{
+	text-align: inherit;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+header nav{
+	background: $brandColor;
+	height:65px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	display: flex;
+	align-items: center;
+}
+
+header nav .fa-bars{
+	display: none;
+}
+
+header nav a{
+	padding: 10px 25px;
+	transition: all 0.5s;
+}
+
+header nav a:hover{
+	color: $brandColor;
+	background: black;
+
+}
+
+.topRight,
+.topLeft,
+.logo{
+	flex: 1 0 33.33%;
+}
+
+.logo{
+	padding:60px 0 30px 0;
+	text-align: center;
+}
+
+.topRight{
+	text-align: right;
+	p{
+		display: inline-block;
+	}
+}
+
+p.login{
+	margin-right: 60px;
+}

@@ -1,0 +1,28 @@
+/*COLLECTION SECTION*/
+.collection{
+	padding-top: 5%;
+	padding-bottom: 3%;
+	background: $bgGrey;
+}
+
+.collection p{
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.collection li{
+	flex: 1 0 263px;
+}
+
+.collection .galleryOverlay{
+	bottom:152px;
+	.btn{
+		margin: 70% 20%;
+	}
+}
+
+.collection .colors{
+	justify-content: center;
+}

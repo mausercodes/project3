@@ -1,0 +1,243 @@
+@import '_setup';
+$brandColor: #ffea00;
+$bgGrey: #e6e3de;
+@import '_gallery';
+@import '_stylebar';
+@import '_colors';
+@import '_general';
+@import '_header';
+@import '_trending';
+@import '_collection';
+@import '_customers';
+@import '_popular';
+@import '_subscribe';
+@import '_footer';
+@import 'flickity';
+
+.cell{
+	width: 100%;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 1092px){
+	header nav{
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 953px){
+	header nav {
+		position: relative;
+		.fa-bars {
+			display: block;
+			padding: 10px 15px;
+			color: black;
+			cursor: pointer;
+		}
+	}
+
+	nav .dropdown{
+		display:none;
+		background: $brandColor;
+		position: absolute;
+		li{
+			display: block;
+			padding:10px;
+		}
+		a{
+			padding: 10px;
+		}
+	}
+
+	nav .dropdown.open {
+		display: block;
+		z-index: 10;
+	}
+
+	.quote p{
+		margin: 0;
+	}
+
+	.overlay{
+		top:15%;
+		left:0;
+	}
+
+	.footer section{
+		flex:1 0 50%;
+	}
+
+	.footerNav ul a,
+	.footerNav p{
+		font-size: 10px;
+	}
+	.flickity-viewport{
+		width:550px;
+	}
+}
+
+@media (max-width: 700px){
+	h1{
+		font-size: 64px;
+	}
+
+	.overlay p{
+		font-size: 16px;
+	}
+
+	.overlay .btn{
+		margin: 0;
+	}
+
+	.topRight .login{
+		margin: 0;
+	}
+
+	.popular{
+		ul{
+			max-width: 360px;
+			margin: 0 auto;
+		}
+		h2{
+			margin-top: 30px;
+			text-align: center;
+		}
+		.stylebar{
+			margin: 10px auto;
+		}
+	}
+
+	.new,
+	.featured,
+	.top{
+		flex:1 0 100%;
+	}
+
+	.footer h2{
+		margin-top: 30px;
+	}
+
+	.footerNav{
+		justify-content: center;
+	}
+
+	.footerNav ul a,
+	.footerNav p{
+		font-size: 12px;
+		padding: 5px;
+	}
+}
+
+@media (max-width: 575px){
+	header input{
+		padding: 0;
+		margin: 0;
+		display: inline-block;
+	}
+
+	h1{
+		font-size: 42px;
+	}
+
+	.overlay p{
+		font-size: 12px;
+	}
+
+	.trending .gallery li{
+		flex: 1 0 50%;
+	}
+
+	.footer h2{
+		text-align: center;
+	}
+
+	.footer .stylebar{
+		margin: 10px auto;
+	}
+
+	.footer section{
+		flex: 1 0 100%;
+		margin: 20px auto;
+		max-width: 400px;
+	}
+
+	.links{
+		text-align: center;
+	}
+
+	.social{
+		justify-content: space-between;
+	}
+
+	.quote p{
+		padding: 20px;
+		line-height: 1.4;
+	}
+
+	.flickity-viewport{
+		width:350px;
+	}
+}
+
+@media (max-width: 400px){
+	.overlay p{
+		display: none;
+	}
+
+	.overlay .btn{
+		padding: 10px;
+	}
+
+	.collection .galleryOverlay{
+		bottom:180px;
+		.btn{
+			margin: 50% 30%;
+		}
+	}
+
+	.subscribe h2{
+		font-size: 20px;
+	}
+
+	.subscribe input{
+		width: 90%;
+		height: 30px
+	}
+
+	.footerNav ul a,
+	.footerNav p{
+		font-size: 10px;
+	}
+
+	.flickity-viewport{
+		width: 100%;
+	}
+
+	.flickity-page-dots{
+		display: none;
+	}
+}
+
+@media (max-width: 300px){
+	.topRight,
+	.topLeft,
+	.logo{
+		flex: 1 0 100%;
+		text-align: center;
+	}
+
+	.overlay .btn{
+		display: none;
+	}
+
+	.collection .galleryOverlay{
+		bottom:155px;
+		.btn{
+			margin: 60% 20%;
+		}
+	}
+
+	.flickity-viewport{
+		width: 100%;
+	}
+}
